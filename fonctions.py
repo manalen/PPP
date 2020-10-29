@@ -12,6 +12,4 @@ def convert_cast(df,categorical_cols):
    for col_name in categorical_cols:
        df[col_name]=df[col_name].astype("object")
    return df
-colonnes=["Survived","Pclass"]
-train=convert_cast(train,colonnes)
-train.info()
+
